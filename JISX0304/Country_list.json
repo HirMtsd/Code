@@ -276,7 +276,7 @@
     {"code":"HR", "codeA3":"HRV", "codeN3":"191", "name":{"full":"クロアチア共和国", "short":"クロアチア"},
                   "en_name":{"short":"Croatia", "full":"the Republic of Croatia"}, "fr_name":"Croatie (la)",
                   "independent":true, "territory":null,
-                  "remark":3: Formerly part of Yougoslavia (YU, YUG, 891) before its split. See code element YUCS"},
+                  "remark":{"part3":"Formerly part of Yougoslavia (YU, YUG, 891) before its split. See code element YUCS."},
                   "start":"0000-01-01"},
     {"code":"CU", "codeA3":"CUB", "codeN3":"192", "name":{"full":"キューバ共和国", "short":"キューバ"},
                   "en_name":{"short":"Cuba", "full":"the Republic of Cuba"}, "fr_name":"Cuba",
