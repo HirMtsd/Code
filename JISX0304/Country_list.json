@@ -854,7 +854,7 @@
                   "remark":{"part1":"Comprises: the west part of the Caroline Islands (Principal island: Babelthuap).", "part3":"Pacific Islands (Trust Territory) (PC, PCI, 582) were divided into: Marshall Islands (MH, MHL, 584), Federated States of Micronesia (FM, FSM, 583), Northern Mariana Islands (MP, MNP, 580) and Palau. See also code element PCHH."},
                   "start":"0000-01-01"},
     {"code":"PS", "codeA3":"PSE", "codeN3":"275", "name":{"full":"西岸・ガザ(パレスチナ自治区)", "short":null},
-                  "en_name":{"en_short":"Palestine, State of", "full":the State of Palestine"}, "fr_name":"Palestine, État de",
+                  "en_name":{"en_short":"Palestine, State of", "full":"the State of Palestine"}, "fr_name":"Palestine, État de",
                   "independent":false, "territory":null,
                   "remark":{"part2":"Remark: Conventional names."},
                   "start":"0000-01-01"},
