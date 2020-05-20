@@ -901,7 +901,7 @@
     {"code":"PR", "codeA3":"PRI", "codeN3":"630", "name":{"full":"プエルトリコ", "short":null},
                   "en_name":{"short":"Puerto Rico", "full":null}, "fr_name":"Porto Rico",
                   "independent":false, "territory":null,
-                  "remark":"2:No subdivisions relevant for this standard. Included also as a subdivision of the United States (US-PR).",},
+                  "remark":{"part2":"No subdivisions relevant for this standard. Included also as a subdivision of the United States (US-PR).",},
                   "start":"0000-01-01"},
     {"code":"QA", "codeA3":"QAT", "codeN3":"634", "name":{"full":"カタール国", "short":"カタール"},
                   "en_name":{"short":"Qatar", "full":"the State of Qatar"}, "fr_name":"Qatar (le)",
