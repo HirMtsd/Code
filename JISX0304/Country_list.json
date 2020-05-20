@@ -501,7 +501,7 @@
     {"code":"HN", "codeA3":"HND", "codeN3":"340", "name":{"full":"ホンジュラス共和国", "short":"ホンジュラス"},
                   "en_name":{"short":"Honduras", "full":"the Republic of Honduras"}, "fr_name":"Honduras (le)",
                   "independent":true, "territory":"Swan Islands",
-                  "remark":" part 1Includes: Swan Islands."},
+                  "remark":{"part1":"Includes: Swan Islands."},
                   "start":"0000-01-01"},
     {"code":"HK", "codeA3":"HKG", "codeN3":"344", "name":{"full":"ホンコン(香港)特別行政区", "short":null},
                   "en_name":{"short":"Hong Kong", "full":"the Hong Kong Special Administrative Region of China"}, "fr_name":"Hong Kong",
