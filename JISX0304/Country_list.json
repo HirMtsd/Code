@@ -1,7 +1,7 @@
-
-
 {
-  "$comment": "JIS X 0304:2011 ISO 3166-1:2013",
+  "$schema": "https://github.com/HirMtsd/Code/blob/master/JISX0304/Country_schema.json",
+  "$comment": "2019/12/19 @HirMtsd Last-Modified:2020/05/22",
+  "title": "JIS X 0304:2011 ISO 3166-1:2013",
   "countries": [
     {"code": "AF", "codeA3": "AFG", "codeN3": "004", "name": {"full": "アフガニスタン・イスラム共和国", "short": "アフガニスタン"},
                   "en_name": {"short": "Afghanistan", "full": "the Islamic Republic of Afghanistan"}, "fr_name": "Afghanistan (l')",
