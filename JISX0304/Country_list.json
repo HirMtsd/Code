@@ -2,7 +2,7 @@
 
 {
   "_comment":"JIS X 0304:2011 ISO 3166-1:2013",
-  "prefecture_list":[
+  "countries":[
     {"code":"AF", "codeA3":"AFG", "codeN3":"004", "name":{"full":"アフガニスタン・イスラム共和国", "short":"アフガニスタン"},
                   "en_name":{"short":"Afghanistan", "full":"the Islamic Republic of Afghanistan"}, "fr_name":"Afghanistan (l')",
                   "independent":true, "territory":null,
