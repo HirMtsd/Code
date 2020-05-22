@@ -1,0 +1,100 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$comment": "2020/05/22 @HirMtsd"
+  "title": "Country_list.json schema",
+  "description": "Country list (JIS X 0304 / ISO 3166-1) json data",
+  "type": "object",
+  "properties": {
+    "countries": {
+      "description": "国名リスト",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "description": "JIS X 0304の2文字国名コード (ISO 3166-1のAlpha-2 code)",
+            "type": "string"
+          },
+          "codeA3": {
+            "description": "JIS X 0304の3文字国名コード (ISO 3166-1のAlpha-3 code)",
+            "type": "string"
+          },
+          "codeN3": {
+            "description": "JIS X 0304の3数字国名コード (ISO 3166-1のNumeric code)",
+            "type": "string"
+          },
+          "name": {
+            "description": "日本語国名",
+            "type": "object",
+            "properties": {
+              "full": {
+                "description": "JIS X 0304の日本語国名",
+                "type": "string"
+              },
+              "short": {
+                "description": "「在外公館の名称及び位置並びに在外公館に勤務する外務公務員の給与に関する法律」(昭和27年4月21日法律第93号)の、「別表第一　在外公館の名称及び位置」記載の国名",
+                "type": "string"
+              }
+            }
+          },
+          "en_name": {
+            "description": "英語国名",
+            "type": "object",
+            "properties": {
+              "short": {
+                "description": "ISO 3166-1のEnglish short name",
+                "type": "string"
+              },
+              "full": {
+                "description": "ISO 3166-1のEnglish full name",
+                "type": "string"
+              }
+            }
+          },
+          "fr_name": {
+            "description": "仏語国名 ISO 3166-1のFrench short name",
+            "type": "string"
+          },
+          "independent": {
+            "description": "ISO 3166-1のIndependent (国連加盟国とバチカン市国はtrue)",
+            "type": "boolean"
+          },
+          "territory": {
+            "description": "ISO 3166-1のTerritory name",
+            "type": "boolean"
+          },
+          "remark": {
+            "description": "ISO 3166-1のRemarks",
+            "type": "object",
+            "properties": {
+              "part1": {
+                "description": "ISO 3166-1のRemark part 1 (ISO 3166-1 国コードに関するもの)"
+                "type": "string"
+              },
+              "part2": {
+                "description": "ISO 3166-1のRemark part 2 (ISO 3166-2 国の地域に関するもの)",
+                "type": "string"
+              },
+              "part3": {
+                "description": "ISO 3166-1のRemark part 3 (ISO 3166-3 廃止した国に関するもの)"
+                "type": "string"
+              }
+          },
+          "note": {
+            "description": "備考 編集上の注記",
+            "type": "string"
+          },
+          "start_date": {
+            "description": "適用開始日",
+            "type": "date"
+          },
+          "end_date": {
+            "description": "適用終了日",
+            "type": "date"
+          }
+        },
+        "required": ["code"]
+      }
+    }
+  }
+}
