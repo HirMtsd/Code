@@ -2,11 +2,11 @@
   "$schema": "https://json-schema.org/draft/2019-09/schema",
   "$comment": "2020/05/22 @HirMtsd",
   "title": "Country_list.json schema",
-  "description": "Country list (JIS X 0304 / ISO 3166-1) json data",
+  "description": "Country list (JIS X 0304 / ISO 3166-1) json schema",
   "type": "object",
   "properties": {
     "countries": {
-      "description": "国名リスト",
+      "description": "国名コード",
       "type": "array",
       "uniquness": true,
       "items": {
