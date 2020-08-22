@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$comment": "2020/08/08 @HirMtsd",
+  "title": "Prefcture_list.json schema",
+  "description": "Prefecture list (JIS X 0401:1973, ISO 3166-2:JP) json schema",
+  "type": "object",
+  "properties": {
+    "prefectures": {
+      "description": "都道府県コード",
+      "type": "array",
+      "uniquness": true,
+      "items": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "description": "JIS X 0401の都道府県コード",
+            "type": "string"
+          },
+          "name": {
+            "description": "都道府県名",
+            "type": "string"
+          },
+          "kana_name": {
+            "description": "都道府県名カナ",
+            "type": "object",
+            "properties": {
+              "half_upper": {
+                "description": "半角カナ、拗音・促音は大書き",
+                "type": "string"
+              },
+              "full_lower": {
+                "description": "全角カナ、拗音・促音は小書き",
+                "type": "string"
+              }
+            }
+          },
+          "en_name": {
+            "description": "都道府県名英字",
+            "type": "object",
+            "properties": {
+              "en": {
+                "description": "ISO 3166-2:JPのen",
+                "type": ["string", "null"]
+              },
+              "ja": {
+                "description": "ISO 3166-2:JPのjp",
+                "type": "string"
+              }
+            }
+          },
+          "start_date": {
+            "description": "適用開始日",
+            "type": "string", 
+            "format": "date"
+          },
+          "end_date": {
+            "description": "適用終了日",
+            "anyOf": [{"type": "string", "format": "date"}, {"type": "null"}]
+          },
+          "note": {
+            "description": "備考 編集上の注記",
+            "type": ["string", "null"]
+          }
+        },
+        "required": ["code"]
+      }
+    }
+  }
+}
