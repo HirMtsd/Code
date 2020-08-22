@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$comment": "2020/08/08 @HirMtsd",
+  "title": "City_list.json schema",
+  "description": "City list (JIS X 0402) json schema",
+  "type": "object",
+  "properties": {
+    "cities": {
+      "description": "市区町村コード",
+      "type": "array",
+      "uniquness": true,
+      "items": {
+        "type": "object",
+        "properties": {
+          "pref_code": {
+            "description": "JIS X 0401の都道府県コード",
+            "type": "string"
+          },
+          "city_code": {
+            "description": "JIS X 0402の市区町村コード",
+            "type": "string"
+          },
+          "name": {
+            "description": "市区町村名",
+            "type": "string"
+          },
+          "kana_name": {
+            "description": "市区町村名カナ",
+            "type": "object",
+            "properties": {
+              "half_upper": {
+                "description": "半角カナ、拗音・促音は大書き",
+                "type": "string"
+              },
+              "full_lower": {
+                "description": "全角カナ、拗音・促音は小書き(政府統計LOD http://data.e-stat.go.jp/ を参照)",
+                "type": "string"
+              }
+            }
+          },
+          "en_name": {
+            "description": "市区町村名英字",
+            "type": "object",
+            "properties": {
+              "en": {
+                "description": "英字表記名称(未整備)",
+                "type": ["string", "null"]
+              }
+            }
+          },
+          "start_date": {
+            "description": "適用開始日",
+            "anyOf": [{"type": "string", "format": "date"}, {"type": "null"}]
+          },
+          "end_date": {
+            "description": "適用終了日",
+            "anyOf": [{"type": "string", "format": "date"}, {"type": "null"}]
+          },
+          "remark": {
+            "description": "注記",
+            "anyOf": [
+              {
+                "type": "object",
+                "properties": {
+                  "start": {
+                    "description": "開始に関するもの(開始理由)",
+                    "type": ["string", "null"]
+                  },
+                  "end": {
+                    "description": "終了に関するもの(継承する市区町村)",
+                    "type": ["string", "null"]
+                  },
+                  "other": {
+                    "description": "その他の注記",
+                    "type": ["string", "null"]
+                  }
+                }
+              },
+              {"type": "null"}
+            ]
+          },
+          "note": {
+            "description": "備考 編集上の注記",
+            "type": ["string", "null"]
+          }
+        },
+        "required": ["pref_code", "city_code"]
+      }
+    }
+  }
+}
